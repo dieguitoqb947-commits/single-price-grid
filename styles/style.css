@@ -6,6 +6,54 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Karla", sans-serif;
+  background-image: url(../images/v748-toon-106.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 250px;
+  box-shadow: 5px 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card__header {
+  grid-column: span 2;
+  background-color: hsl(0, 0%, 100%);
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+.card__header-title {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+}
+
+.card__header-subtitle {
+  color: hsl(71, 73%, 54%);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card__header-description {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.5;
+}
+
+.card__asideleft {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.card__asideright {
+  border: solid 1px;
+  background-color: hsl(179, 62%, 43%);
 }
 
 .attribution {
