@@ -22,13 +22,15 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   box-shadow: 5px 8px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .card__header {
   grid-column: span 2;
   background-color: hsl(0, 0%, 100%);
-  padding: 15px 30px;
+  padding: 10px 30px;
+  padding-bottom: 35px;
 }
 
 .card__header-title {
@@ -92,6 +94,14 @@ p {
   width: 100%;
   cursor: pointer;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.1);
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.card__asideleft-button:hover {
+  color: hsl(179, 62%, 43%);
+  transform: scale(1.1);
 }
 
 .card__asideright {
@@ -122,6 +132,7 @@ p {
 }
 
 .attribution {
+  margin-top: 20px;
   font-size: 11px;
   text-align: center;
 }
